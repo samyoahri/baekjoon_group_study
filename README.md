@@ -73,6 +73,8 @@ git commit -m "Create boj_3003_samyoahri"
 <br />
 
 ## ✅ PR 규칙
+- PR시 자신이 해당하는 branch에 pr을 날려주세요. `main`브랜치에 날리면 안됩니다.
+- 단, 자신의 repository 혹은 원격저장소에는 main으로 커밋은 괜찮습니다. pull request 날릴 때 `main`브랜치에 날리면 안된다는 뜻입니다.
 - PR 제목: 이름 / 주차 / 몇 문제
 -  ```samyoahri / 8월 1주차 / 4문제 ```
 
