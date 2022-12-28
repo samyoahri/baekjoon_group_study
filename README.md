@@ -186,5 +186,9 @@ git commit -m "Create boj_3003_samyoahri"
   ![commit_updated1](https://user-images.githubusercontent.com/121100022/209766868-d5f52b8c-81c3-42f2-b79c-7277228fdef0.png)
   - description은 생략하셔도 되지만, 편하게 막 작성해주셔도 됩니다. 체감 난이도를 이야기해주시면, 다음 문제를 선정하는데 도움이 됩니다.
   #### 11. push
+  - push는 지금까지 작업했던 소스코드를 로컬저장소(.git)에서 원격저장소(자기자신의 github)에 올리는 과정입니다.
+  - 아래와 같이 push를 눌러주면 알아서 진행됩니다.
+  ![push_updated1_1](https://user-images.githubusercontent.com/121100022/209767821-33a0cb51-f7c9-429e-b2a9-17b3ce968b85.png)
+
   #### 12. pull request
   #### 13. 확인
