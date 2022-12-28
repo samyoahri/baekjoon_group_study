@@ -100,6 +100,8 @@ git commit -m "Create boj_3003_samyoahri"
 - 그래서 좀 더 사용하기 편한 github desktop을 사용하고자 합니다.
   #### 1. url접속
   #### 2. fork
+  ![fork1](https://user-images.githubusercontent.com/82167151/209756109-50691198-3b27-4ea8-8cc1-fc88a01dda05.png)
+
   #### 3. git clone
   #### 4. branch
   #### 5. folder
