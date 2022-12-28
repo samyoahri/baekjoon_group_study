@@ -2,13 +2,18 @@ package boj_3003_mon;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Chess_pieces1{
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Chess_pieces{
     private int king, queen;
     private int rock, bishop,knight;
     private int pawn;
 
+    private Chess_pieces() {
+    }
 
-    public Chess_pieces1(int king, int queen, int rock, int bishop, int knight, int pawn) {
+    public Chess_pieces(int king, int queen, int rock, int bishop, int knight, int pawn) {
         this.king = king;
         this.queen = queen;
         this.rock = rock;
