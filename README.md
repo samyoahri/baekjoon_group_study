@@ -100,8 +100,11 @@ git commit -m "Create boj_3003_samyoahri"
 - 그래서 좀 더 사용하기 편한 github desktop을 사용하고자 합니다.
   #### 1. url접속
   #### 2. fork
+  - fork는 samyoahri의 원격저장소(remote repository)를 그대로 들고가서 자기 자신의 원격 저장소로 들고 가는 과정입니다.
+  - 기존 클론으로 들고가면 자기 자신의 원격저장소(예를 들어, riberty의 저장소)에 잔디가 심기지 않는 것에 대한 방법으로 fork를 떠서 가져가는 과정을 추가했습니다.
   ![fork1](https://user-images.githubusercontent.com/82167151/209756109-50691198-3b27-4ea8-8cc1-fc88a01dda05.png)
-
+  ![fork2](https://user-images.githubusercontent.com/121100022/209756386-06f83fdd-aa39-4ea5-be38-d9734366e7ac.png)
+  ![fork3](https://user-images.githubusercontent.com/121100022/209756410-b1be60f4-1857-405b-b33d-7f52361ce87c.png)
   #### 3. git clone
   #### 4. branch
   #### 5. folder
