@@ -125,9 +125,29 @@ git commit -m "Create boj_3003_samyoahri"
   - branch를 이용하여서 좀 더 보기 편한 구조로 만들어볼까도 생각했지만, 현재는 생략하고 추후 어느정도 깃 사용법이 올라가면 적용해볼 생각입니다.
   #### 5. folder
   - folder 구조는 손대실 것이 없습니다. 관리자가 알아서 폴더를 만들 예정입니다.
+  - 아래에서 보는 것과 같이 큰 폴더 week00과 같이 주차에 따라 큰 폴더가 있을 것입니다.
+    현재 해당하는 `weekXX`폴더를 찾아주세요
+  - week00에서 보듯이 그 아래에는 해당 주차에 풀 백준문제에 해당하는 문제번호와 요일이 적혀 있습니다.
+    `문제출처_문제번호_요일`로 폴더 구조가 더 있습니다. 해당하는 문제를 검색하시면 됩니다.
+  ![folder_updated1_1](https://user-images.githubusercontent.com/82167151/209761082-cc5bc44c-65c2-4730-adfb-577f47cf15f6.png)
   #### 6. gitignore
+  - 소스코드를 제외한 모든 파일들을 gitignore에 작성해주세요
   #### 7. code 작성
+  - 아래와 같이 해당하는 `weekXX`폴더에 들어가서 `boj_문제번호_요일`의 폴더들 중 해당하는 요일의 폴더에 들어가주세요
+  - 아래와 같이 그 곳에 해당하는 소스코드 파일을 만들어주세요
+  ![code_updated1_2](https://user-images.githubusercontent.com/121100022/209762651-d839166f-72ea-4e68-baf3-49104630da5b.png)
+  - 아래 내용은 정말 중요합니다!!!
+  - 코드를 공유해서 누가 작성한 것인지 확인하고 pull request를 받았을 때, 한눈에 누가 작성한 것인지 알기 위해서 반드시 필요한 과정입니다.
+  - 소스코드를 작성할 때 `boj_문제번호_작성자`방식으로 소스코드의 파일이름을 정의해주세요!!! 반드시
+![code_updated1_3](https://user-images.githubusercontent.com/121100022/209762655-ab9f276b-3976-46d9-abab-bceefda423c3.png)
+  - 아래와 같이 문제에 해당하는 소스코드를 작성해주세요.
+  ![code_updated1_4](https://user-images.githubusercontent.com/121100022/209762656-3d1d1647-8352-42b6-8cdf-ea1d57d42941.png)
   #### 8. 백준제출
+  - 위에서 설명한 것과 같이 JAVA사용자들은 주의가 필요합니다. 아래와 같이 백준제출시 코드와 깃허브 제출시 코드가 서로 다릅니다. 기존 로컬에서 소스코드를 작성하실 때는 깃허브 규칙을 준수하시다가, 백준 제출시 클래스 이름을 `Main`으로 바꾸시는 것이 훨씬 편할 것입니다.
+  ![baekjoon_submit1](https://user-images.githubusercontent.com/121100022/209763710-cc1c2e54-1975-464b-ad82-13733194fe9b.png)
+  - 아래와 같이 제출을 완료하면 정답처리가 될 것입니다.
+  ![baekjoon_submit2](https://user-images.githubusercontent.com/121100022/209763712-42f470cb-c4d5-4a8a-8f2a-4eb25a24be44.png)
+
   #### 9. fetch
   #### 10. commit
   #### 11. push
