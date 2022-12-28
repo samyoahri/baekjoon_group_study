@@ -191,4 +191,20 @@ git commit -m "Create boj_3003_samyoahri"
   ![push_updated1_1](https://user-images.githubusercontent.com/121100022/209767821-33a0cb51-f7c9-429e-b2a9-17b3ce968b85.png)
 
   #### 12. pull request
+  - 지금까지 작업한 소스코드는 자기자신의 폴더, 로컬저장소, 원격저장소에는 저장되어있는 상태이지만, samyoahri의 원격저장소에는 저장되어 있지 않은 상태입니다.
+  - samyoahri의 원격저장소에 저장하기위해 samyoahri에게 pull request를 날려야 합니다.
+  - 그러기 위해서 여러가지 방법이 있지만 2가지 방법을 소개하고자 합니다.
+  - 1. 자기자신의 github로 가는 방법
+  ![pull_request_updated1](https://user-images.githubusercontent.com/121100022/209769413-2c030b7c-b553-4dfa-9725-fbf5c5b6127a.png)
+
+  - 2. github desktop으로 가는 방법
+  ![pull_request_updated2](https://user-images.githubusercontent.com/121100022/209769416-8aeb7b10-93dc-463e-a217-171f646cb0d6.png)
+  - github로 가든 github desktop으로 가든 결과적으로는 samyoahri의 원격 저장소로 가게 될겁니다. 아래와 같은 형태로요.
+  ![pull_request_updated3](https://user-images.githubusercontent.com/121100022/209769419-2427d813-e931-475d-a980-0c0d2da7a1d1.png)
+  - 이제 pull request를 날렸으면 아래와 같은 창이 뜰겁니다. 하지만 관리자가 merge를 바로 못하게 막아 뒀습니다. 빨간색으로 `review required`와 `Merge is blocked`가 뜨는 것은 자연스러운 일입니다. 너무 걱정하지마세요.
+  ![pull_request_updated4](https://user-images.githubusercontent.com/121100022/209770247-d5025918-339c-44bd-b848-375b412211f2.png)
+
   #### 13. 확인
+  - 아래와 같이 자신이 작성한 pull request가 제대로 떠있으면 잘하신 것입니다.
+  - ![image](https://user-images.githubusercontent.com/121100022/209770724-753a33ad-6a77-4463-bb4c-d0e236ae8e30.png)
+  - 나머지는 관리자가 제대로 커밋규칙과 파일규칙에 맞게 잘 작성했는지만 확인하고 Merge할 것입니다.
