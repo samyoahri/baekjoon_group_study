@@ -19,7 +19,24 @@
 
 ## ✅ 소스코드 작성규칙
 - 소스코드는 자유롭게 작성해주세요.
-
+- 주의사항: java 사용자들은 백준 제출시 클래스 이름이 Main이어야 제출이 가능합니다. 하지만, 커밋 제출할 때는 파일이름과 클래스 이름 규칙을 따라주세요.
+  - 백준 제출시 코드
+    ```java
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }
+    ```
+    
+  - 커밋 제출시 코드
+    ```java
+    public class boj_2557_samyoahri {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }
+    ```
 <br />
 <br />
 
@@ -149,7 +166,25 @@ git commit -m "Create boj_3003_samyoahri"
   ![baekjoon_submit2](https://user-images.githubusercontent.com/121100022/209763712-42f470cb-c4d5-4a8a-8f2a-4eb25a24be44.png)
 
   #### 9. fetch
+  - fetch는 자기자신의 remote repository의 변경이 없는지 확인하는 작업입니다.
+  - 하지만 저희는 fork를 떠서 작업을 하고 있으므로, fetch를 하기전 samyoahri의 원격저장소와의 차이를 먼저 확인해야합니다.
+  - 그러기 위해서, fork sync를 아래와 같이 진행할 예정입니다.
+  ![fetch_updated1_1](https://user-images.githubusercontent.com/121100022/209765842-2fc83bd8-4e78-4815-8321-1750a2f6a3f4.png)
+  - 위에서 fork sync를 맞추고 나면 github desktop에서 fetch를 진행해주세요.
+  ![fetch_updated1_2](https://user-images.githubusercontent.com/121100022/209765845-529e5170-3e1b-40fc-9a3c-f445e87c8084.png)
+  - 우리는 pull과정을 진행할 것입니다. pull이란 자기자신의 원격저장소의 코드나 commit이 달라진 부분들을 전부 가져오는 과정입니다.
+  - pull과정을 진행하기위해, 아래와 같이 pull을 진행할 파일들이 업로드 되어있을 수 있습니다. 그러면 해당하는 모든 파일들을 pull해주세요.
+  ![fetch_updated1_3](https://user-images.githubusercontent.com/121100022/209765848-17ea3cc0-9ee8-460c-8fb8-6118bcb756b5.png)
+
   #### 10. commit
+  - fetch도 완료했고 pull도 위에서 완료했습니다.
+  - commit은 자기가 만든 소스코드를 local저장소(자기자신의 숨긴파일 .git)에 올리는 과정입니다.
+  - 그러면 이제 commit을 진행해봅시다. commit을 진행하기 위해 github desktop에 접속합니다. 아래에서 보는 것과 같이 github desktop이 알아서 파일의 변화를 읽어 줍니다.
+  - 그 다음, 해당하는 작업을 `commit 규칙`에 맞춰서 작성해주세요
+  - `commit 규칙`은 `Create boj_문제번호_작성자이름`순으로 작성해주세요.
+  - 아래에서 보는 것과 같이 commit을 할 때는 작업한 파일을 하나씩 올려주세요. 혹시라도 충돌이 났을 때, 되돌리기 위해 수정하려면 관리자뿐만 아니라 모두가 많은 시간을 사용해야 할 수 있습니다.
+  ![commit_updated1](https://user-images.githubusercontent.com/121100022/209766868-d5f52b8c-81c3-42f2-b79c-7277228fdef0.png)
+  - description은 생략하셔도 되지만, 편하게 막 작성해주셔도 됩니다. 체감 난이도를 이야기해주시면, 다음 문제를 선정하는데 도움이 됩니다.
   #### 11. push
   #### 12. pull request
   #### 13. 확인
