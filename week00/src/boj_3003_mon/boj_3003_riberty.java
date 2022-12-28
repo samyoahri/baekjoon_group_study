@@ -2,18 +2,15 @@ package boj_3003_mon;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
-class Chess_pieces{
+class Chess_pieces1{
     private int king, queen;
     private int rock, bishop,knight;
     private int pawn;
 
-    private Chess_pieces() {
+    private Chess_pieces1() {
     }
 
-    public Chess_pieces(int king, int queen, int rock, int bishop, int knight, int pawn) {
+    public Chess_pieces1(int king, int queen, int rock, int bishop, int knight, int pawn) {
         this.king = king;
         this.queen = queen;
         this.rock = rock;
@@ -75,7 +72,7 @@ class Chess_pieces{
         System.out.println(-(getPawn()-8));
     }
 }
-public class boj_3003_samyoahri {
+public class boj_3003_riberty {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //흰색 킹, 퀸, 룩, 비숍, 나이트, 폰의 개수
@@ -92,4 +89,3 @@ public class boj_3003_samyoahri {
 
     }
 }
-
