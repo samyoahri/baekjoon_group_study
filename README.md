@@ -99,15 +99,32 @@ git commit -m "Create boj_3003_samyoahri"
 ### github desktop 사용법
 - 그래서 좀 더 사용하기 편한 github desktop을 사용하고자 합니다.
   #### 1. url접속
+  - https://github.com/samyoahri/baekjoon_group_study.git
   #### 2. fork
   - fork는 samyoahri의 원격저장소(remote repository)를 그대로 들고가서 자기 자신의 원격 저장소로 들고 가는 과정입니다.
-  - 기존 클론으로 들고가면 자기 자신의 원격저장소(예를 들어, riberty의 저장소)에 잔디가 심기지 않는 것에 대한 방법으로 fork를 떠서 가져가는 과정을 추가했습니다.
+  - 기존 클론으로 들고가면 자기 자신의 원격저장소(예를 들어, riberty의 저장소)에 잔디가 심기지 않는 것에 대한 방법으로 fork를 떠서 가져가는 과정을 추가했습니다. 일반적으로는 하지 않아도 되는 과정일 수 있지만, 그래도 원활한 진행을 위해서 반드시 fork를 떠주세요.
+  - samyoahri의 원격저장소 중 하나인 baekjoon_group_study저장소로 들어가주세요. 들어가서 아래 그림과 같이 fork 버튼이 보이시나요? fork를 눌러주세요
   ![fork1](https://user-images.githubusercontent.com/82167151/209756109-50691198-3b27-4ea8-8cc1-fc88a01dda05.png)
+  - fork를 누르시면 아래와 같은 창으로 바뀔 것입니다. 아래와 같이 진행하여 create fork버튼을 눌러주세요.
   ![fork2](https://user-images.githubusercontent.com/121100022/209756386-06f83fdd-aa39-4ea5-be38-d9734366e7ac.png)
+  - 그러면 아래와 같이 자기자신의 원격 저장소(remote repository)로 들고갈 것입니다. 아래와 같이 Bictor Lym과 같이 자기 저장소에 제대로 fork를 떳는지 확인해주세요.
   ![fork3](https://user-images.githubusercontent.com/121100022/209756410-b1be60f4-1857-405b-b33d-7f52361ce87c.png)
   #### 3. git clone
+  - clone은 원격저장소에 있는 소스코드를 로컬 저장소(local repository)로 들고 가는 과정입니다. 좀 더 쉽게 말해서, 인터넷에만 있는 코드를 자기자신의 컴퓨터에 코드를 가져오는 과정입니다.
+  - 이 과정을 진행하는 이유는 좀 더 편하게 로컬 저장소에서 작업을 해서 쉽게 자기 자신의 원격저장소에 저장하기 위해서 하는 것입니다. 이 과정을 진행하지 않으면 깃허브 저장소를 열어서 파일을 올리는 과정을 손으로 일일이 해야합니다. 파일이 적을 때는 손으로 일일이 하는 것이 그렇게 어렵지 않지만, 파일을 10개씩 생산하거나 수정하다 보면 그걸 사람손으로 일일이 올리는 과정이 엄청 힘듭니다. 그것보다는 CLI인 GIT을 사용하거나 아니면 현재 진행중인 GUI툴인 Github desktop을 사용하기 위해서 반드시 필요한 과정입니다.
+  - 아래와 같이 자기 자신의 github desktop을 들어가서 자기자신의 원격저장소의 repository를 clone해주세요.
+  ![git_clone1](https://user-images.githubusercontent.com/121100022/209757466-0f7b7ded-2c37-43f4-a812-cdda076c8549.png)
+  - 여기서 절대 samyoahri의 repository를 클론하지마세요. 아까 위에서 fork를 뜨면서 자기자신의 repository에 samyoahri의 저장소를 fork해 왔습니다.
+  - 그러니까, 반드시 자기 자신의 repository를 클론하세요.!!!!
+  ![git_clone2](https://user-images.githubusercontent.com/121100022/209757467-27f9111e-ce37-4d37-99a8-15793b4d7358.png)
+  - 우리는 코드를 통합할 것이므로 아래와 같이 `To contribute to the parent project`를 클릭해주세요.
+  - `for my own purpose`는 개인 프로젝트시 코드를 들고 갈때 사용하기 적합합니다.
+  ![git_clone3](https://user-images.githubusercontent.com/121100022/209757469-ce996e6e-ef3d-499e-92a8-26ba6e1c71c8.png)
+
   #### 4. branch
+  - branch를 이용하여서 좀 더 보기 편한 구조로 만들어볼까도 생각했지만, 현재는 생략하고 추후 어느정도 깃 사용법이 올라가면 적용해볼 생각입니다.
   #### 5. folder
+  - folder 구조는 손대실 것이 없습니다. 관리자가 알아서 폴더를 만들 예정입니다.
   #### 6. gitignore
   #### 7. code 작성
   #### 8. 백준제출
