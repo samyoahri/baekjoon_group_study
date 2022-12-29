@@ -14,6 +14,6 @@ void get_answer(char* str, int len) {
 int main() {
 	char str[101];
 	scanf("%s", str);
-
+ 
 	get_answer(str, strlen(str));
-}
+} 
