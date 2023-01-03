@@ -16,6 +16,6 @@ int main() {
 		}
 	}
     for(auto i : v) ans += i;
-	cout << ans;
+    cout << ans;
     return 0;
 }
