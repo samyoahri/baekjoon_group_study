@@ -66,6 +66,9 @@ public class boj_17298_samyoahri {
         }
         for(int i = 1; i <= n; i++){
 //            System.out.print(neg[i]+ " ");
+
+//            String res = Integer.toString(neg[i]) + " ";
+//            out.write(res);
             out.write(neg[i] + " ");
         }
         out.flush();
