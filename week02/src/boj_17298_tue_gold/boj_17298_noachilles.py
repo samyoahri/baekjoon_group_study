@@ -1,26 +1,18 @@
 import sys
-import copy
 input = sys.stdin.readline
 
 if __name__ == '__main__':
     N = int(input().strip())
-    seq = input().strip().split(maxsplit=N-1)
-    res = []
-    for i in range(len(seq)):
-        seq[i] = int(seq[i])
-    rln = -1
-    for i in range(len(seq)-1, -1, -1):
-        if seq[i] > rln:
-            rln = -1
-        if len(seq) > (i+1):
-            p = seq.pop()
-            if p > seq[i]:
-                rln = p
-        else:
-            pass
-        res.append(rln)
-    for i in range(len(res)-1, -1, -1):
-        print(res[i], end=' ')
+    seq = list(map(int, input().split()))
+    stack = []
+    o_big = [-1] * N
+    
+    stack.append(0)
+    for i in range(1, len(seq)):
+        while stack and seq[stack[-1]] < seq[i]:
+            o_big[stack.pop()] = seq[i]
+        stack.append(i)
+    print(*o_big)
     
     # for i in range(len(seq)):
     #     tmp = copy.deepcopy(seq)
@@ -29,7 +21,7 @@ if __name__ == '__main__':
     #         p = tmp.pop()
     #         if tmp[i] < p:
     #             rln = p
+    #         else:
+    #             continue
     #     print(rln, end=' ')
-    
-    ## timeout, 수정하겠습니다.
-        
+    # 시간초과 코드
