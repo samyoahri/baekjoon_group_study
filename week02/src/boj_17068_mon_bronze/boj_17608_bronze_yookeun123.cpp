@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-
+//asdas
 int main() {
 	int N, cnt = 0;
 	cin >> N;
