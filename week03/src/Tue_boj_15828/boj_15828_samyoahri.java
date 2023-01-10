@@ -42,7 +42,6 @@ public class boj_15828_samyoahri {
             }
         }
 
-
         out.write(ans.toString());
         out.flush();
 
