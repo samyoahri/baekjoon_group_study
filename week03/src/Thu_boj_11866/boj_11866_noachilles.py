@@ -6,6 +6,7 @@ if __name__ == "__main__":
     n, k = map(int, input().strip().split())
     que = deque([i+1 for i in range(n)])
     res = list()
+    
     i = 1
     while que:
         if i % k == 0:
