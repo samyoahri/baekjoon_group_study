@@ -37,12 +37,13 @@ public class boj_10815_samyoahri {
         st = new StringTokenizer(in.readLine());
         for (int i = 0; i < M; i++) {
             cardNum = Integer.parseInt(st.nextToken());
-            if(cards.containsKey(cardNum)){
-                ans.append("1 ");
-            }
-            else{
-                ans.append("0 ");
-            }
+            ans.append( (cards.containsKey(cardNum) ? "1 " : "0 "));
+//            if(cards.containsKey(cardNum)){
+//                ans.append("1 ");
+//            }
+//            else{
+//                ans.append("0 ");
+//            }
         }
         out.write(ans.toString());
         out.flush();
