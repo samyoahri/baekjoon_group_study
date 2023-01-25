@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// ※ Dictonary를 사용하지 않고 푸는 코드가 더 효율적이다(다른 코드 참고)
+// ※ Dictonary를 사용하지 않고 푸는 코드가 더 효율적이다(<- 다른 코드 참고)
 
 int main() {
 	ios::sync_with_stdio(false);
