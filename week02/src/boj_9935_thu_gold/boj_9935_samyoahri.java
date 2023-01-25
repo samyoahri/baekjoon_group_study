@@ -7,47 +7,71 @@ public class boj_9935_samyoahri {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringBuilder ans = new StringBuilder();
 
-//        Stack<Character> leftChar = new Stack<>();
-//        Stack<Character> rightChar = new Stack<>();
         Stack<Character>stack = new Stack<>();
-//        Stack<Character>stack1 = new Stack<>();
-//        Stack<Character>stack2 = new Stack<>();
-//        Queue<Character>queue = new LinkedList<>();
-
 
         String string = in.readLine();
         String explodingStr = in.readLine();
-        int n = explodingStr.length();
+        char[] charString = string.toCharArray();
 
-        StringBuilder check = new StringBuilder();
-//        char[] check = new char[n];
-//        Arrays.fill(check, ' ');
+        for (int i = 0; i < charString.length; i++) {
+            if (charString[i] == explodingStr.charAt(explodingStr.length()-1)) {
+                stack.push(charString[i]);
+                int stackIdx = stack.size()-1;
+                int explodingStrIdx = explodingStr.length()-1;
 
-        StringBuilder tmp = new StringBuilder(string);
-
-        while(string.contains(explodingStr)){
-            for(int i = 0; i < string.length(); i++){
-//                queue.add(string.charAt(i));
-                
+                boolean check = false;
+                for (int j = stackIdx; j > (stackIdx-explodingStr.length() ); j--, explodingStrIdx--) {
+//                    System.out.println("<j = " + j + ">");
+//                    System.out.println("stack.get(j) = " + stack.get(j));
+                    if (stack.size() < explodingStr.length()
+                            ||stack.get(j) != explodingStr.charAt(explodingStrIdx)) {
+                        check=false;
+                        break;
+                    }
+                    else{
+                        check = true;
+                    }
+                }
+                if (check) {
+                    int explodingStrLen = explodingStr.length();
+//                    for (int k = 0; k < 10; k++) {
+//                        stack.pop();
+//                    }
+                    while (explodingStrLen-- > 0) {
+                        stack.pop();
+                    }
+                }
             }
-
-
-            tmp.append(stack.pop());
-
-
-            string = tmp.toString();
+            else{
+                stack.push(charString[i]);
+            }
+            /////
+//            System.out.println("[i = " + i + "]");
+//            for (char c : stack) {
+//                System.out.print(c);
+//            }
+//            System.out.println();
+//            if (i == 7) {
+//                System.out.println("stackIdx = " + (stack.size()-1));
+//                System.out.println("explodingStrIdx = " + (explodingStr.length()-1));
+//            }
         }
-        out.write(string);
+        if (stack.isEmpty()) {
+            ans.append("FRULA");
+        }
+        else{
+            for (int i = 0; i < stack.size(); i++) {
+                ans.append(stack.get(i));
+            }
+        }
+
+        out.write(ans.toString());
         out.flush();
 
         in.close();
         out.close();
-//        for(int i = 0; i < string.length(); i++){
-//
-//        }
-
-
     }
     //메모리 초과
 //    public static void main(String[] args) throws IOException {
