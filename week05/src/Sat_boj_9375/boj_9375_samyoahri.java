@@ -2,6 +2,7 @@ package Sat_boj_9375;
 
 import java.io.*;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.StringTokenizer;
 
 public class boj_9375_samyoahri {
@@ -28,12 +29,23 @@ public class boj_9375_samyoahri {
                 else{
                     int num = closet.get(category);
                     closet.replace(category, ++num);
+//                    closet.put(category, closet.get(category)+1);
                 }
             }
             int cnt = 1;
             for (String key : closet.keySet()) {
                 cnt *= (closet.get(key)+1);
             }
+//            for (int numClothes : closet.values()) {
+//                cnt *= (numClothes + 1);
+//            }
+/////////
+//            Iterator<Integer> iter = closet.values().iterator();
+//            while (iter.hasNext()) {
+//                cnt *= (iter.next().intValue() + 1);
+//            }
+/////////
+
             ans.append(--cnt + "\n");
         }
 
