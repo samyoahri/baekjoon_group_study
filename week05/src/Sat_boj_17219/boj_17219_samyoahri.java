@@ -2,6 +2,7 @@ package Sat_boj_17219;
 
 import java.io.*;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.StringTokenizer;
 
 public class boj_17219_samyoahri {
@@ -16,6 +17,7 @@ public class boj_17219_samyoahri {
         //찾으려는 사이트의 주소수
         int M = Integer.parseInt(st.nextToken());
 
+//        Map<String, String> information = new HashMap<>();
         HashMap<String, String> information = new HashMap<>();
 
         for (int i = 0; i < N; i++) {
