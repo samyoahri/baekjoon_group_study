@@ -47,6 +47,7 @@ public class boj_2910_samyoahri {
             }
         }
         List<Integer> list = new ArrayList<>(freqMap.keySet());
+//        List<Info> infoList = new ArrayList<Info>(freqMap.entrySet());
 //        Collections.sort(list);
 //        Collections.sort(list, new Comparable<>());
         Collections.sort(list, new Comparator<Integer>() {
