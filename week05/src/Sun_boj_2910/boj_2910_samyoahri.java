@@ -19,6 +19,7 @@ class Info implements Comparable<Info>{
             return (this.idx - o.idx);
         }
         return -(this.freq - o.freq);
+//        return ((this.freq < o.freq) ? -1 : (this.freq == o.freq) ? 0 : 1);
     }
 }
 public class boj_2910_samyoahri {
@@ -41,15 +42,13 @@ public class boj_2910_samyoahri {
             }
             else{
                 Info value = freqMap.get(key);
-//                value.freq++;
-                freqMap.put(key, new Info(value.idx, value.freq+1));
+                value.freq++;
+//                freqMap.put(key, new Info(value.idx, value.freq+1));
             }
-//            System.out.println("[i = " + i +"]");
-//            for (Map.Entry<Integer, Freq> entry : freqMap.entrySet()) {
-//                System.out.println("<key:" + entry.getKey() + "> =>" + " freq:" + entry.getValue().freq + " idx:" + entry.getValue().idx );
-//            }
         }
         List<Integer> list = new ArrayList<>(freqMap.keySet());
+//        Collections.sort(list);
+//        Collections.sort(list, new Comparable<>());
         Collections.sort(list, new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
@@ -61,24 +60,7 @@ public class boj_2910_samyoahri {
                 }
             }
         });
-//        for (Map.Entry<Integer, Freq> entry : freqMap.entrySet()) {
-//            System.out.println("<key:" + entry.getKey() + "> =>" + " freq:" + entry.getValue().freq + " idx:" + entry.getValue().idx );
-//        }
 
-//        List<Integer> list = new ArrayList<Integer>(freqMap.keySet());
-//        Collections.sort(list);
-
-//        Collections.sort(list, new Comparator<>() {
-//            @Override
-//            public int compare(Integer o1, Integer o2) {
-//                if (freqMap.get(o1.intValue()).freq == freqMap.get(o2.intValue()).freq) {
-//                    return compare(freqMap.get(o1.intValue()).idx, freqMap.get(o2.intValue()).idx);
-//                }
-//                else{
-//                    return compare(freqMap.get(o1.intValue()).freq, freqMap.get(o2.intValue()).freq);
-//                }
-//            }
-//        });
 
         Iterator<Integer> iter = list.iterator();
         while (iter.hasNext()) {
