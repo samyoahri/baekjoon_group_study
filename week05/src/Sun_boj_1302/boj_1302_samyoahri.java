@@ -12,7 +12,8 @@ public class boj_1302_samyoahri {
         Map<String, Integer> bestSeller = new HashMap<>();
 
         int N = Integer.parseInt(in.readLine());
-
+        String str = "";
+        int max = -2147000000;
         for (int i = 0; i < N; i++) {
             String bookName = in.readLine();
             if (!bestSeller.containsKey(bookName)) {
@@ -20,10 +21,12 @@ public class boj_1302_samyoahri {
             }
             else{
                 bestSeller.put(bookName, bestSeller.get(bookName)+1);
+//                bestSeller.replace(bookName, bestSeller.get(bookName)+1);
             }
+//            bestSeller.put(bookName, bestSeller.getOrDefault(bookName, 0) + 1);
+//            max = Math.max(max, bestSeller.get(bookName));
+
         }
-        String str = "";
-        int max = -2147000000;
         for (Map.Entry<String, Integer> entry : bestSeller.entrySet()) {
             String key = entry.getKey();
             int value = entry.getValue();
@@ -37,6 +40,13 @@ public class boj_1302_samyoahri {
             }
         }
         ans.append(str);
+//        List<String> list = new ArrayList<>();
+//        for (Map.Entry<String, Integer> entry : bestSeller.entrySet()) {
+//            if(entry.getValue() == max) list.add(entry.getKey());
+//        }
+//        Collections.sort(list);
+//        ans.append(list.get(0));
+
 
         out.write(ans.toString());
         out.flush();
