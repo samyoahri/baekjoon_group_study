@@ -20,8 +20,8 @@ public class boj_2178_samyoahri {
     static int N;
     static int M;
     static int result;
-    static boolean visited[][];
-    static int graph[][];
+    static boolean[][] visited;
+    static int[][] graph;
     static void bfs(int i, int j) {
         Queue<Coordinate> queue = new ArrayDeque<>();
         queue.add(new Coordinate(i, j, 1));
@@ -32,43 +32,64 @@ public class boj_2178_samyoahri {
                 result = now.cnt;
                 return;
             }
-
             int cnt;
             int newX;
             int newY;
             for (int k = 1; k <= 4; k++) {
                 cnt = now.cnt + 1;
-                //Top
-                if (k == 1) {
-                    newX = now.x;
-                    newY = now.y + 1;
+                newX = changeNewX(now.x, k);
+                newY = changeNewY(now.y, k);
 
-                }
-                //Down
-                else if (k == 2) {
-                    newX = now.x;
-                    newY = now.y - 1;
-                }
-                //Left
-                else if (k == 3) {
-                    newX = now.x -1;
-                    newY = now.y;
-                }
-                //Right
-                else if (k == 4) {
-                    newX = now.x + 1;
-                    newY = now.y;
-                }
-                else{
-                    System.out.println("K값 오류");
-                    break;
-                }
                 if(newX < 1 || newY < 1 || newX > M || newY > N)    continue;
                 if (!visited[newY][newX] && graph[newY][newX] == 1) {
                     queue.offer(new Coordinate(newX, newY, cnt));
                     visited[newY][newX] = true;
                 }
             }
+        }
+    }
+    static int changeNewX(int x, int k){
+        int newX;
+        //Top
+        if (k == 1) {
+            return x;
+        }
+        //Down
+        else if (k == 2) {
+            return x;
+        }
+        //Left
+        else if (k == 3) {
+            return (x - 1);
+        }
+        //Right
+        else if (k == 4) {
+            return (x + 1);
+        }
+        else{
+            return -1;
+        }
+    }
+    static int changeNewY(int y, int k){
+        //Top
+        if (k == 1) {
+            return (y + 1);
+        }
+        //Down
+        else if (k == 2) {
+            return (y - 1);
+        }
+        //Left
+        else if (k == 3) {
+            return y;
+        }
+        //Right
+        else if (k == 4) {
+            return y;
+        }
+        else{
+            System.out.println("K값 오류");
+            return -1;
         }
     }
     public static void main(String[] args) throws IOException {
