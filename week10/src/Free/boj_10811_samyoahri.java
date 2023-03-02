@@ -3,7 +3,7 @@ package Free;
 import java.io.*;
 import java.util.*;
 
-public class boj_11657_samyoahri {
+public class boj_10811_samyoahri {
     static int[] arr;
 
     static void reverse(int i, int j) {
