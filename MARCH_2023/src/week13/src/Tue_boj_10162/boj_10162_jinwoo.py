@@ -10,5 +10,6 @@ def main():
         print(result_A[0], result_B[0], result_C[0])
     return
 
+
 if __name__ == '__main__':
     main()
