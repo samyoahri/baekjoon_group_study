@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 	int N;
 	vector<int> v; //등수
-	long long int ans = 0; 
+	long long int ans = 0;
  
 	cin >> N;
 	for (int i = 0; i < N; i++) {
@@ -23,4 +23,6 @@ int main() {
 	}
     
 	cout << ans;
+    
+    return 0;
 }
