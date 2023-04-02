@@ -3,3 +3,4 @@
 *.exe
 out
 .vscode/settings.json
+*.vscode
