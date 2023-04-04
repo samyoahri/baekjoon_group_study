@@ -13,10 +13,9 @@ def main():
     end_date = 301
     num_flower = 0
 
-    while True:
+    while flowers != []:
         # 마지막으로 확인한 꽃이 지는 날짜가 조건을 만족하면 종료 / 기간에 공백이 생기면 종료
-        if end_date > 1130: return num_flower
-        if flowers == [] or flowers[0][0] > end_date: return 0
+        if end_date > 1130 or flowers[0][0] > end_date: break
 
         # 시작 날짜가 현재 마지막 날짜보다 작은 것 중에 지는 날짜가 가장 늦는 것을 선택
         for _ in range(len(flowers)):
@@ -26,6 +25,8 @@ def main():
         # 마지막 날짜를 수정하고, 카운트 + 1
         end_date = last_flower[1]
         num_flower += 1
+        
+    return num_flower if end_date > 1130 else 0
 
 if __name__ == '__main__':
     print(main())
