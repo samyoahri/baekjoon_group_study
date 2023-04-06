@@ -2,6 +2,9 @@
 using namespace std;
 
 int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);	
 	
 	// A : 300초, B : 60초, C : 10초
 	int a, b, c = 0;
