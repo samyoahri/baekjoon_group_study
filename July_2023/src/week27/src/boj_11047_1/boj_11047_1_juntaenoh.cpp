@@ -1,39 +1,33 @@
 //
 //  main.cpp
-//  boj_10773_1
+//  boj_11047_1
 //
 //  Created by 노준태 on 2023/07/26.
 //
 
 #include <iostream>
-#include <stack>
+#include <vector>
 using namespace std;
-
-
-int k,num,sum;
-stack<int> s;
+vector<int> v;
+int n,k,val,coin;
 
 int main(){
-    sum = 0;
-    cin >> k;
-    for ( int i = 0; i <k; i++){
-        
-        cin >> num;
-        if (num==0){
-            if (s.empty()){
-                continue;
+    cin >> n >> k;
+    for (int i = 0; i < n; i++){
+        cin >> val;
+        v.push_back(val);
+    }
+    coin = 0;
+    while (!(k == 0) ){
+        for (int i = n-1; i >= 0 ;i--){
+            if (k >= v[i]){
+                k -= v[i];
+                coin += 1;
+                break;
             }
-            else
-                s.pop();
-        }
-        else{
-            s.push(num);
         }
     }
-    while(!s.empty()){
-        sum += s.top();
-        s.pop();
-    }
-    cout << sum;
+    cout << coin;
     
+
 }
