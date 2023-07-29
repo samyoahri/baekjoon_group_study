@@ -3,4 +3,4 @@
 *.exe
 out
 .vscode/settings.json
-*.vscode
+*.vscode.DS_Store
