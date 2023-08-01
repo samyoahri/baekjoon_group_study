@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Stack;
 import java.util.StringTokenizer;
 import java.util.ArrayList;
 
@@ -16,22 +17,29 @@ public class boj_10773_ormor {
         StringTokenizer st = new StringTokenizer(in.readLine());
 
         int K = Integer.parseInt(st.nextToken());
-        ArrayList<Integer> KValue = new ArrayList<>();
+
+        Stack<Integer> KValue = new Stack<>();
+        // ArrayList<Integer> KValue = new ArrayList<>();
 
         int checkNumber = 0;
         while(K-- > 0){
             checkNumber = Integer.parseInt(in.readLine());
             if(checkNumber != 0){
-                KValue.add(checkNumber);
+                KValue.push(checkNumber);
             }
             else{
-                KValue.remove(KValue.size()-1);
+                KValue.pop();
             }
         }
 
         int sum = 0;
-        for(int i : KValue)
-            sum += i;
+        // stack 메소드 쓰는게 인덱스 접근보다 더 빠름
+        while(!KValue.isEmpty()){
+            sum += KValue.pop();
+        }
+
+        // for(int i : KValue)
+        //     sum += i;
 
         // 한 줄 작성
         // int sum = KValue.stream().mapToInt(Integer::intValue).sum();
