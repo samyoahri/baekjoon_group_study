@@ -16,7 +16,7 @@ def main():
 
     for i in range(1, len(pair_index)+1):
         combi = list(combinations(pair_index, i))
-        
+
         for pair in combi:
             result = list(expression)
             for bracket in pair:
