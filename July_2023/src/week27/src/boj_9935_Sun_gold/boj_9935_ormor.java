@@ -3,7 +3,6 @@ package week27.src.boj_9935_Sun_gold;
 import java.io.*;
 import java.util.*;
 
-
 public class boj_9935_ormor {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
