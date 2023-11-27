@@ -8,3 +8,4 @@ out
 .vscode
 *.json
 .vscode/tasks.json
+.json
