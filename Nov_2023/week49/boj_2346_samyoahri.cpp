@@ -15,16 +15,7 @@ class Ballon{
         }
         
 };
-void dequePrint(deque<Ballon> deque){
-    cout << "============DEQUE============\n";
-    for(int i = 0; i < deque.size(); ++i){
-        Ballon ballon = deque.front();
-        cout << ballon.idx << " " << ballon.numCard <<"\n";
-        deque.pop_front();
-        deque.push_back(ballon);
-    }
-    cout << "=============================\n";
-}
+
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(0);
