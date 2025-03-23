@@ -2,13 +2,13 @@
 *.iml
 *.exe
 out
-# .vscode/settings.json
-# *.vscode.DS_Store
+.vscode/
+*.json
+.vscode/tasks.json
+.vscode/settings.json
+
 *.DS_Store
-# .vscode
-# *.json
-# .vscode/tasks.json
-# .json
+
 
 test.c
 test.cpp
